@@ -6,8 +6,8 @@ package ru.hw_5.Entity;
 public class TV extends Product {
     private float diagonal;
 
-    public TV(String name, float price, int categoryID, float diagonal) {
-        super(name, price, categoryID);
+    public TV(String name, float price, int categoryID, float diagonal,String imgPath) {
+        super(name, price, categoryID,imgPath);
         this.diagonal = diagonal;
     }
 

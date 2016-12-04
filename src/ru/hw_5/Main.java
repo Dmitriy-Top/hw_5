@@ -1,11 +1,12 @@
 package ru.hw_5;
 
 
-import ru.hw_5.Utilites.CommandFactory;
-import ru.hw_5.Utilites.ConsoleExectutable;
-import ru.hw_5.Utilites.Initializing;
-import ru.hw_5.Utilites.Reader;
+import ru.hw_5.Utilites.*;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -13,13 +14,12 @@ public class Main {
 
     public static void main(String[] args) {
         Initializing.initProductDb();
-       Scanner sc = Reader.getInstance();
         System.out.println("Добро пожаловать в интернет-магазин");
         while (!isStop){
-            String input = sc.nextLine();
+            String input = Reader.getUserInput();
             ConsoleExectutable command = CommandFactory.getCommand(input);
             String result = command.execut();
-            System.out.println(result);
+            UserMassageHelper.showMassageToUser(result);
         }
     }
 

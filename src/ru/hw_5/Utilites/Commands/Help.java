@@ -9,7 +9,7 @@ public class Help implements ConsoleExectutable {
 
     @Override
     public String execut() {
-        return "help - вызов справки \nshowProducts - показать каталог \naddToCart %productname or id% - добавить товар в карзину \nshowCart - показать продукты в корзине \nexit - выход";
+        return "help - вызов справки \nshowProducts - показать каталог\nshowProductImg %productname or id% - показать изображение товара\naddToCart %productname or id% - добавить товар в карзину \nshowCart - показать продукты в корзине\ndeletefromCart %productname or id% - удолить продукт из корзины\nexit - выход";
     }
 
     public Help() {

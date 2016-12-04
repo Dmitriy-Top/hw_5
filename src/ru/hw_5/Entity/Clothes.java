@@ -6,8 +6,8 @@ package ru.hw_5.Entity;
 public class Clothes extends Product {
     private int size;
 
-    public Clothes(String name, float price, int categoryID, int size) {
-        super(name, price, categoryID);
+    public Clothes(String name, float price, int categoryID, int size,String imgPath) {
+        super(name, price, categoryID,imgPath);
         this.size = size;
     }
 

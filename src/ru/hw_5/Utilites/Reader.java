@@ -8,11 +8,13 @@ import java.util.Scanner;
 public class Reader {
     private static Scanner instance;
 
-    public static Scanner getInstance() {
+    public static String getUserInput(){
         if (instance==null){
             instance = new Scanner(System.in);
         }
-        return instance;
+        String input;
+        input = instance.nextLine();
+        return input;
     }
 
     private Reader() {

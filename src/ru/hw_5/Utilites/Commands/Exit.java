@@ -10,6 +10,7 @@ public class Exit implements ConsoleExectutable {
     @Override
     public String execut() {
         Main.setIsStop(true);
+        CartDAO.saveCart();
         return "Всего доброго";
     }
 }

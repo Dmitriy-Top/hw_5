@@ -5,8 +5,8 @@ package ru.hw_5.Entity;
  */
 public class Food extends Product {
     private float weight;
-    public Food(String name, float price, int categoryID, float weight) {
-        super(name, price, categoryID);
+    public Food(String name, float price, int categoryID, float weight,String imgPath) {
+        super(name, price, categoryID,imgPath);
         this.weight = weight;
     }
 

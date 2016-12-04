@@ -18,10 +18,14 @@ public class CommandFactory{
         switch (command[0]) {
             case "showProducts":
                 return new ShowProducts();
+            case "showProductImg":
+                return new ShowProductImg(args);
             case "addToCart":
                 return new AddToCart(args);
             case "showCart":
                 return new ShowCart();
+            case "deletefromCart":
+                return new DeleteFromCart(args);
             case "help":
                 return new Help();
             case "exit":
